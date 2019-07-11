@@ -45,11 +45,13 @@ public class BaseEntity implements Serializable {
      * 版本号 - 乐观锁
      */
     @Version
+    @TableField(fill = FieldFill.INSERT)
     private Long versionNumber;
 
     /**
      * 删除标识
      */
     @TableLogic
+    @TableField(fill = FieldFill.INSERT)
     private Integer deleteFlag;
 }

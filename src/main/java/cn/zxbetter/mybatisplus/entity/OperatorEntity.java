@@ -18,6 +18,9 @@ public class OperatorEntity extends BaseEntity {
     public static final String FIELD_OPERATOR = "operator";
     public static final String DB_OPERATOR = "operator";
 
+    /**
+     * 操作人
+     */
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private String operator;
 }
