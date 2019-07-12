@@ -5,26 +5,26 @@
 1. 提供 **乐观锁拦截器** 和 **分页拦截器** 的自动装配。
 2. 提供多个版本的 `BaseEntity` 选择，并为这些 `BaseEntity` 提供了自动填充功能。
 
-  当使用 `IdEntity` 或者 `FullBaseEntity` 时，需要修改全局默认主键类型：
+   当使用 `IdEntity` 或者 `FullBaseEntity` 时，需要修改全局默认主键类型：
   
-  ```yaml
-  mybatis-plus:
-    global-config:
-      db-config:
-        id-type: auto
-  ```
+   ```yaml
+   mybatis-plus:
+     global-config:
+       db-config:
+         id-type: auto
+   ```
 
 3. 提供代码生成器的封装
 
-  ```java
-  import cn.zxbetter.mybatisplus.generator.MybatisPlusGeneratorHelper;
+   ```java
+   import cn.zxbetter.mybatisplus.generator.MybatisPlusGeneratorHelper;
 
-  public class MybatisGenerator {
-      public static void main(String[] args) {
-          new MybatisPlusGeneratorHelper().generate();
-      }
-  }
-  ```
+   public class MybatisGenerator {
+       public static void main(String[] args) {
+           new MybatisPlusGeneratorHelper().generate();
+       }
+   }
+   ```
 
 ## 使用
 
